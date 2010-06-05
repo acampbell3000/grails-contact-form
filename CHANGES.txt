@@ -1,0 +1,44 @@
+VERSION: 1.0.5
+
+Release notes 1.0.5
+- Grails upgrade to 1.2.2.
+- Introduced missing index.gsp file.
+
+Release notes 1.0.4
+- Update render pattern has used in latest remote-forms skin (1.0.5).
+
+Release notes 1.0.3
+- Fix for unit test compilation error.
+
+Release notes 1.0.2
+- Resource look up fix to allow remote-forms theme to be loaded properly
+- Clean up of additional resources provided by grails 1.2.x upgrade
+- Small tweak to default <h1>
+- Update JCaptcha dependency to 1.2.1 
+
+Release notes 1.0.1
+- Additional documentation
+- Example config file
+
+Release notes 1.0.0
+- Complete set of unit tests
+- Small tweaks
+
+Release notes 0.0.5
+- Updates to the documentation.
+- Introduction of unit tests.
+- Removal of redundant templates.
+- JCaptcha dependency update.
+- Config comment improvements.
+
+Release notes 0.0.4
+- Updates to the remote-forms skin and improvements to the index.gsp
+
+Release notes 0.0.3
+- Further small tweaks.
+
+Release notes 0.0.2:
+- Fixed small typo within the load skin script.
+
+Initial release: 0.0.1
+
