@@ -77,6 +77,14 @@ contains comments which highlight the following properties:
 - Minimum text length
 - Text colour
 
+-----------------------------------------
+Where is the source repository located?
+-----------------------------------------
+The source repository has been moved to github.com to make it easier
+to contribute patches and updates:
+
+    http://github.com/acampbell3000/grails-contact-form
+
 ------------------------
 Further documentation:
 ------------------------
