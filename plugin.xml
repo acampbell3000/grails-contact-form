@@ -1,4 +1,4 @@
-<plugin name='contact-form' version='1.0.5' grailsVersion='1.2.0 &gt; *'>
+<plugin name='contact-form' version='1.0.6' grailsVersion='1.2.0 &gt; *'>
   <author>Anthony Campbell</author>
   <authorEmail>acampbell3000 [[at] googlemail [dot]] com </authorEmail>
   <title>Grails Contact Form</title>
@@ -9,6 +9,7 @@ Ajax forms provided by the "remote-forms" skin available through the skin-loader
 </description>
   <documentation>http://grails.org/plugin/contact-form</documentation>
   <resources>
+    <resource>BuildConfig</resource>
     <resource>Config</resource>
     <resource>UrlMappings</resource>
     <resource>uk.co.anthonycampbell.grails.plugins.contactform.ContactFormController</resource>
@@ -18,9 +19,6 @@ Ajax forms provided by the "remote-forms" skin available through the skin-loader
   <dependencies>
     <plugin name='mail' version='0.9' />
     <plugin name='jcaptcha' version='1.2.1' />
-    <resolvers>
-      <resolver type='grailsPlugins' name='grailsPlugins' />
-    </resolvers>
   </dependencies>
   <behavior />
 </plugin>
