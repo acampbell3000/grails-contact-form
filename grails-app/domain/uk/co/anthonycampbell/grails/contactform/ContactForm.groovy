@@ -1,4 +1,4 @@
-package uk.co.anthonycampbell.grails.plugins.contactform
+package uk.co.anthonycampbell.grails.contactform
 
 /**
  * Contact form domain class

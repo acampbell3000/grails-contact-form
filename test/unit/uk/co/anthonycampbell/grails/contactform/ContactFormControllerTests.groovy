@@ -1,4 +1,4 @@
-package uk.co.anthonycampbell.grails.plugins.contactform
+package uk.co.anthonycampbell.grails.contactform
 
 import grails.test.*
 import org.grails.plugin.jcaptcha.JcaptchaService
@@ -106,7 +106,7 @@ class ContactFormControllerTests extends ControllerUnitTestCase {
         assertEquals "Unexpected redirect action returned!", "create",
             contactFormController.modelAndView.viewName
         assertEquals "Unexpected flash message displayed!",
-            "uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.success",
+            "uk.co.anthonycampbell.grails.contactform.ContactForm.success",
             contactFormController.flash.message
     }
 
@@ -125,7 +125,7 @@ class ContactFormControllerTests extends ControllerUnitTestCase {
         assertEquals "Unexpected redirect action returned!", "create",
             contactFormController.modelAndView.viewName
         assertEquals "Unexpected flash message displayed!",
-            "uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.destination.address.not.found.message",
+            "uk.co.anthonycampbell.grails.contactform.ContactForm.destination.address.not.found.message",
             contactFormController.flash.message
     }
 
@@ -144,7 +144,7 @@ class ContactFormControllerTests extends ControllerUnitTestCase {
         assertEquals "Unexpected redirect action returned!", "create",
             contactFormController.modelAndView.viewName
         assertEquals "Unexpected flash message displayed!",
-            "uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.destination.address.not.found.message",
+            "uk.co.anthonycampbell.grails.contactform.ContactForm.destination.address.not.found.message",
             contactFormController.flash.message
     }
 
@@ -163,7 +163,7 @@ class ContactFormControllerTests extends ControllerUnitTestCase {
         assertEquals "Unexpected redirect action returned!", "create",
             contactFormController.modelAndView.viewName
         assertEquals "Unexpected flash message displayed!",
-            "uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.destination.address.not.found.message",
+            "uk.co.anthonycampbell.grails.contactform.ContactForm.destination.address.not.found.message",
             contactFormController.flash.message
     }
 
@@ -258,7 +258,7 @@ class ContactFormControllerTests extends ControllerUnitTestCase {
         assertEquals "Unexpected redirect action returned!", "create",
             contactFormController.modelAndView.viewName
         assertEquals "Unexpected flash message displayed!",
-            "uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.send.fail",
+            "uk.co.anthonycampbell.grails.contactform.ContactForm.send.fail",
             contactFormController.flash.message
     }
 
@@ -289,7 +289,7 @@ class ContactFormControllerTests extends ControllerUnitTestCase {
         assertEquals "Unexpected redirect action returned!", "ajaxCreate",
             contactFormController.modelAndView.viewName
         assertEquals "Unexpected flash message displayed!",
-            "uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.success",
+            "uk.co.anthonycampbell.grails.contactform.ContactForm.success",
             contactFormController.flash.message
     }
 
@@ -308,7 +308,7 @@ class ContactFormControllerTests extends ControllerUnitTestCase {
         assertEquals "Unexpected redirect action returned!", "ajaxCreate",
             contactFormController.modelAndView.viewName
         assertEquals "Unexpected flash message displayed!",
-            "uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.destination.address.not.found.message",
+            "uk.co.anthonycampbell.grails.contactform.ContactForm.destination.address.not.found.message",
             contactFormController.flash.message
     }
 
@@ -327,7 +327,7 @@ class ContactFormControllerTests extends ControllerUnitTestCase {
         assertEquals "Unexpected redirect action returned!", "ajaxCreate",
             contactFormController.modelAndView.viewName
         assertEquals "Unexpected flash message displayed!",
-            "uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.destination.address.not.found.message",
+            "uk.co.anthonycampbell.grails.contactform.ContactForm.destination.address.not.found.message",
             contactFormController.flash.message
     }
 
@@ -346,7 +346,7 @@ class ContactFormControllerTests extends ControllerUnitTestCase {
         assertEquals "Unexpected redirect action returned!", "ajaxCreate",
             contactFormController.modelAndView.viewName
         assertEquals "Unexpected flash message displayed!",
-            "uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.destination.address.not.found.message",
+            "uk.co.anthonycampbell.grails.contactform.ContactForm.destination.address.not.found.message",
             contactFormController.flash.message
     }
 
@@ -441,7 +441,7 @@ class ContactFormControllerTests extends ControllerUnitTestCase {
         assertEquals "Unexpected redirect action returned!", "ajaxCreate",
             contactFormController.modelAndView.viewName
         assertEquals "Unexpected flash message displayed!",
-            "uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.send.fail",
+            "uk.co.anthonycampbell.grails.contactform.ContactForm.send.fail",
             contactFormController.flash.message
     }
 

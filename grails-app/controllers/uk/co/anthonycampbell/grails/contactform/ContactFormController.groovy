@@ -1,4 +1,4 @@
-package uk.co.anthonycampbell.grails.plugins.contactform
+package uk.co.anthonycampbell.grails.contactform
 
 import org.springframework.web.servlet.support.RequestContextUtils as RCU
 import org.apache.commons.lang.StringUtils;
@@ -129,7 +129,7 @@ class ContactFormController {
 
                     // Reject captcha value
                     contactFormInstance.errors.rejectValue('captcha',
-                        'uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.captcha.doesnotmatch',
+                        'uk.co.anthonycampbell.grails.contactform.ContactForm.captcha.doesnotmatch',
                         'The provided text does not match the image below')
                     validCaptcha = false
                 }
@@ -138,7 +138,7 @@ class ContactFormController {
                 
                 // Reject captcha value
                 contactFormInstance.errors.rejectValue('captcha',
-                    'uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.captcha.doesnotmatch',
+                    'uk.co.anthonycampbell.grails.contactform.ContactForm.captcha.doesnotmatch',
                     'The provided text does not match the image below')
                 validCaptcha = false
             }
@@ -160,14 +160,14 @@ class ContactFormController {
                     // Reset form
                     contactFormInstance = new ContactForm()
 
-                    flash.message = "${message(code: 'uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.success')}"
+                    flash.message = "${message(code: 'uk.co.anthonycampbell.grails.contactform.ContactForm.success')}"
                     render(view: view, model: [contactFormInstance: contactFormInstance])
                     
                 } catch (Exception e) {
                     log.error("Unable to send a contact form message - send mail has thrown an exception. " +
                         "Please ensure your mail configuration declared in Config.groovy is up-to-date.", e)
 
-                    flash.message = "${message(code: 'uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.send.fail')}"
+                    flash.message = "${message(code: 'uk.co.anthonycampbell.grails.contactform.ContactForm.send.fail')}"
                     render(view: view, model: [contactFormInstance: contactFormInstance])
                 }
             } else {
@@ -178,7 +178,7 @@ class ContactFormController {
                 "you have declared the property grailsApplication.config.grails.mail.to in your " +
                 "application's config.")
 
-            flash.message = "${message(code: 'uk.co.anthonycampbell.grails.plugins.contactform.ContactForm.destination.address.not.found.message')}"
+            flash.message = "${message(code: 'uk.co.anthonycampbell.grails.contactform.ContactForm.destination.address.not.found.message')}"
             render(view: view, model: [contactFormInstance: contactFormInstance])
         }
     }
