@@ -1,4 +1,6 @@
-VERSION: 1.0.7
+VERSION: 1.0.8
+
+Release notes 1.0.8 (TBA)
 
 Release notes 1.0.7 (10th September, 2010)
 - Grails upgrade to 1.3.4 (Had to comment out captcha config to allow upgrade script to complete). 
