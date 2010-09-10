@@ -6,7 +6,7 @@
         <meta name="name" content="remote-forms" />
         <meta name="author" content="Anthony Campbell (anthonycampbell.co.uk)" />
         <meta name="copyright" content="Anthony Campbell (anthonycampbell.co.uk)" />
-        <link rel="stylesheet" href="${resource(dir:'css', file:'grails-picasa.css')}" />
+        <link rel="stylesheet" href="${resource(dir:'css', file:'remote-forms.css')}" />
         <link rel="shortcut icon" href="${resource(dir:'images/icon', file:'favicon.ico')}" type="image/x-icon" />
         <g:layoutHead />
 
